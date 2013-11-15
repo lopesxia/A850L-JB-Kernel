@@ -371,9 +371,9 @@ KBUILD_CPPFLAGS := -D__KERNEL__
 KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -fno-strict-aliasing -fno-common \
 		   -Werror-implicit-function-declaration \
-		   -Wno-format-security \
+		   -Wno-format-security -Wno-maybe-uninitialized \
 		   -fno-delete-null-pointer-checks
-#// 20120105, albatros, imei ÁÖ¼Ò°ªÀÇ °ø¿ëÀ¸·Î »ç¿ëÀ» À§ÇØ¼­
+#// 20120105, albatros, imei ï¿½Ö¼Ò°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ø¼ï¿½
 ifeq ($(OEM_PRODUCT_MANUFACTURER),PANTECH)
 LINUXINCLUDE += -I$(srctree)/../vendor/pantech/frameworks/sky_rawdata
 
